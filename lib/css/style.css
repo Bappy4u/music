@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  max-height: 100vh;
+}
+
+body ul.transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+body ul.transition li {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background: white;
+  width: 20%;
+}
+
+main {
+  background-color: #ACA3A3;
+  height: 100vh;
+  background-image: url("../images/Ellipse 178.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+main header {
+  width: 85%;
+  margin: auto;
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .menu {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+main header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+main header nav ul li a {
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+main .hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85vh;
+}
+
+main .hero .side {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.16);
+  margin-left: 20px;
+  width: 60px;
+  border-radius: 50px;
+  padding: 20px 0;
+}
+
+main .hero .side li {
+  list-style: none;
+  text-align: center;
+}
+
+main .hero .side li:hover {
+  background-color: #8a8787;
+}
+
+main .hero .side .active {
+  background-color: #8a8787 !important;
+}
+
+main .hero .side a {
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+main .hero .text {
+  position: relative;
+}
+
+main .hero .text h1 {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 400;
+  position: absolute;
+  top: -20vh;
+  left: 10vw;
+  z-index: 3;
+}
+
+main .hero .text h2 {
+  color: #fff;
+  position: absolute;
+  top: -4vh;
+  text-transform: capitalize;
+  font-size: 35px;
+  left: -5vh;
+  font-weight: 400;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+main .hero .text img {
+  width: 50%;
+  position: absolute;
+  top: -50vh;
+  right: 10vw;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+main .hero .right-side-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(112, 112, 112, 0.9);
+  height: 100vh;
+  padding: 100px 0 0 30px;
+  color: #fff;
+  z-index: 9;
+  width: 20vw;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main .hero .right-side-list .title {
+  margin-bottom: 2vh;
+}
+
+main .hero .right-side-list ul li {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .hero .right-side-list ul li:hover {
+  background-color: #8a8787;
+}
+
+main .hero .right-side-list ul li .img img {
+  width: 60px;
+  border-radius: 20px;
+}
+
+main .hero .right-side-list ul li .title .name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.player-bar {
+  background-color: rgba(112, 112, 112, 0.9);
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 3;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.player-bar .player div {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.player-bar .player div i {
+  padding: 5px;
+}
+
+.player-bar .playing {
+  color: #fff;
+  font-size: 18px;
+}
+
+.player-bar .playing span {
+  color: #b1b1b1;
+}
+/*# sourceMappingURL=style.css.map */
